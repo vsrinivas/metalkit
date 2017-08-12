@@ -1,4 +1,3 @@
-========
 Metalkit
 ========
 
@@ -75,7 +74,7 @@ enter an example directory and type 'make'. You should end up with a
  - Point your virtual machine or emulator of choice to boot.img as a
    floppy disk image.
 
- - Use 'dd' to copy the image to a USB disk, then use your BIO's boot
+ - Use 'dd' to copy the image to a USB disk, then use your BIOS boot
    menu to select the USB disk. Make sure to copy the image to the
    entire disk, not a single partition (like /dev/sdX, not /dev/sdX1).
 
