@@ -35,7 +35,7 @@
  * writing software that runs on the bare metal. Get the latest code
  * at http://svn.navi.cx/misc/trunk/metalkit/
  *
- * Copyright (c) 2008-2009 Micah Dowty
+ * Copyright (c) 2008-2009 Micah Elizabeth Scott
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -301,7 +301,7 @@ copy_enter32:
          *
          * When we're done copying, branch to entry32 while we're
          * still in protected mode. Also note that we do a long branch
-         * to its final address, not it's temporary BIOS_PTR() address.
+         * to its final address, not its temporary BIOS_PTR() address.
          */
 
         addl    $DISK_BUFFER_SIZE, BIOS_PTR(dest_address)

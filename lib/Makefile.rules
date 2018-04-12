@@ -49,8 +49,12 @@ target: $(TARGET)
 %.lst: %.elf
 	objdump -d $< > $@
 
+# Pad rule added for compatibility with VirtualBox. Can be commented
+# out to save space for qemu or vmware
+
 %.img: %.elf
 	objcopy -O binary $< $@
+#	python $(METALKIT_LIB)/pad.py $@ 512
 
 # Stackable rules for processing data files
 
