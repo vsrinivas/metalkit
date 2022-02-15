@@ -19,7 +19,7 @@ CFLAGS := -m32 -ffreestanding -nostdinc -fno-stack-protector -I$(METALKIT_LIB)
 LDFLAGS := -nostdlib -Wl,-T,$(METALKIT_LIB)/image.ld
 
 # Extra warnings
-CFLAGS += -Wall -Werror
+CFLAGS += -Wall
 
 # Size Optimizations.
 CFLAGS += -Os -Wl,--gc-sections -ffunction-sections -fdata-sections
